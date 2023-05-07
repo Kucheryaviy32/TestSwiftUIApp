@@ -8,17 +8,37 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var check = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView() {
+            
+            if check == false {
+                
+                LogIn(logged: $check)
+                
+            } else {
+                
+                Profile(loginIsOn: $check)
+                    .tabItem{
+                        Label("Профиль", systemImage: "person")
+                    }
+                
+                Feed()
+                    .tabItem{
+                        Label("Новости", systemImage: "globe")
+                    }
+                
+                Heroes()
+                    .tabItem{
+                        Label("Герои", systemImage: "figure.archery")
+                    }
+            }
+            
         }
-        .padding()
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
