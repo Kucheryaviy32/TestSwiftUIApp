@@ -11,20 +11,20 @@ struct HeroRaw: View {
     var post : Post
     
     var body: some View {
-            HStack(alignment: .center){
-                post.image
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 100, height: 100)
-                    .border(.gray
-                            , width: 3)
-                VStack(alignment: .leading){
-                    Text(post.hero)
-                        .fontWeight(.bold)
-                        .foregroundColor(/*@START_MENU_TOKEN@*/.red/*@END_MENU_TOKEN@*/)
-                    Text(post.description)
-                }
-                .multilineTextAlignment(.leading)
+        HStack(alignment: .center){
+            post.image
+                .resizable()
+                .scaledToFit()
+                .frame(width: 100, height: 100)
+                .border(.gray
+                        , width: 3)
+            VStack(alignment: .leading){
+                Text(post.hero)
+                    .fontWeight(.bold)
+                    .foregroundColor(/*@START_MENU_TOKEN@*/.red/*@END_MENU_TOKEN@*/)
+                Text(post.description)
+            }
+            .multilineTextAlignment(.leading)
         }
     }
 }

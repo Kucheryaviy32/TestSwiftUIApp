@@ -9,23 +9,21 @@ import SwiftUI
 
 struct Heroes: View {
     var body: some View {
-        ZStack{
             NavigationView{
                 List(Post.posts(), id: \.hero) { post in
                     NavigationLink {
                         HeroList(post: post)
-                        
                     } label: {
                         HeroRaw(post: post)
                     }
+                    .listRowBackground(hidden())
+                    .listRowSeparatorTint(.black)
                 }
                 .listStyle(.plain)
-            }
-            
+                .background(AngularGradient(colors: [.blue, .white], center: .trailing)
+                    .opacity(0.7))
         }
-        
     }
-    
 }
 
 

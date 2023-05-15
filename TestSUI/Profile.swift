@@ -62,11 +62,9 @@ struct Profile: View {
     }
 }
 
-// Не могу понять что нужно передать в инициализатор чтобы превью отображалось. Вернее не что, а КАК(?) передать. Ладно бы он давал просто вставить булево значение, но требует тип Binding<Bool>
+struct Profile_Previews: PreviewProvider {
+    static var previews: some View {
+        Profile(loginIsOn: .constant(false))
+    }
+}
 
-//    struct Profile_Previews: PreviewProvider {
-//        static var previews: some View {
-//            Profile(loginIsOn: <#T##Binding<Bool>#>)
-//        }
-//    }
-//}

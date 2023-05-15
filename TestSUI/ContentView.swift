@@ -35,7 +35,6 @@ struct ContentView: View {
                         Label("Герои", systemImage: "figure.archery")
                     }
             }
-            
         }
     }
 }
