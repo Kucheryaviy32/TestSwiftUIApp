@@ -19,6 +19,7 @@
 		1C613E8A2A07FEC800B34392 /* Heroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C613E892A07FEC800B34392 /* Heroes.swift */; };
 		1C613E8C2A0804BE00B34392 /* HeroRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C613E8B2A0804BE00B34392 /* HeroRaw.swift */; };
 		1C613E8F2A08221100B34392 /* HeroList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C613E8E2A08221100B34392 /* HeroList.swift */; };
+		1C7891B92A13BA4A005C57C8 /* LocalNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7891B82A13BA4A005C57C8 /* LocalNotificationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		1C613E892A07FEC800B34392 /* Heroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heroes.swift; sourceTree = "<group>"; };
 		1C613E8B2A0804BE00B34392 /* HeroRaw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRaw.swift; sourceTree = "<group>"; };
 		1C613E8E2A08221100B34392 /* HeroList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroList.swift; sourceTree = "<group>"; };
+		1C7891B82A13BA4A005C57C8 /* LocalNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			children = (
 				1C613E692A03FBE200B34392 /* TestSUIApp.swift */,
 				1C613E6B2A03FBE200B34392 /* ContentView.swift */,
+				1C7891B82A13BA4A005C57C8 /* LocalNotificationService.swift */,
 				1C613E7B2A043DB500B34392 /* LogIn.swift */,
 				1C613E772A03FF7200B34392 /* Profile.swift */,
 				1C613E792A04001800B34392 /* Feed.swift */,
@@ -170,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C613E802A045C4E00B34392 /* Model.swift in Sources */,
+				1C7891B92A13BA4A005C57C8 /* LocalNotificationService.swift in Sources */,
 				1C613E7E2A0447B200B34392 /* GeneralModifiers.swift in Sources */,
 				1C613E7C2A043DB500B34392 /* LogIn.swift in Sources */,
 				1C613E6C2A03FBE200B34392 /* ContentView.swift in Sources */,

@@ -13,6 +13,7 @@ struct LogIn: View {
     @State private var logIn: String = ""
     @State private var password: String = ""
     @Binding var logged: Bool
+    var notification = LocalNotificationService()
 
     private func checkPassword() {
         logged = true
@@ -53,3 +54,14 @@ struct LogIn_Previews: PreviewProvider {
         LogIn(logged: .constant(false))
     }
 }
+
+//extension View {
+//   func regNot () {
+//        var notification = LocalNotificationService()
+//        notification.registerNotification()
+//    }
+//func sheduleNot () {
+//        var notification = LocalNotificationService()
+//        notification.sheduleNotification()
+//    }
+//}

@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var check = false
+    var notification = LocalNotificationService()
     
     var body: some View {
         TabView() {
@@ -36,6 +37,12 @@ struct ContentView: View {
                     }
             }
         }
+    }
+    init(check: Bool = false, notification: LocalNotificationService = LocalNotificationService()) {
+        self.check = check
+        self.notification = notification
+        notification.registerNotification()
+        notification.sheduleNotification()
     }
 }
 struct ContentView_Previews: PreviewProvider {
